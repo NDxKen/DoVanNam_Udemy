@@ -1,0 +1,128 @@
+.footer {
+  hr {
+    margin: 0;
+  }
+  .footer__main {
+    padding: 4rem 0;
+    .item {
+      padding-bottom: 1rem;
+      a {
+        font-size: 1.3rem;
+        color: $color-link;
+        &:hover {
+          color: #003845;
+        }
+      }
+      .link--bold {
+        font-weight: 700;
+      }
+    }
+    .locate-dropup {
+      display: flex;
+      flex-direction: row-reverse;
+      button[type="button"] {
+        min-width: 16rem;
+        padding: 1rem 2rem;
+        border: 1px solid $color-border-grey;
+        font-size: 1.3rem;
+        .country {
+          margin-left: 1rem;
+          margin-right: 3rem;
+        }
+        &:hover {
+          color: black;
+          border-color: black;
+        }
+      }
+      .dropdown-menu {
+        font-size: 1.3rem;
+        box-shadow: 0 4px 16px rgba(20, 23, 28, 0.25);
+        transform: translate(0px, -367px)!important;
+        a {
+          display: block;
+          padding: 0.5rem;
+          min-width: 15.7rem;
+          &:hover {
+            background-color: $color-grey;
+          }
+        }
+      }
+    }
+    .btn-group.show {
+      button[type="button"] {
+        border-color: black;
+        color: black;
+      }
+    }
+  }
+  .footer__bottom {
+    margin: 3rem 0;
+    .item {
+      font-size: 1.3rem;
+      color: $color-text-2;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      .footer__logo {
+        img {
+          width: 110px;
+          margin-right: 3rem;
+        }
+      }
+      .terms {
+        margin-right: 3rem;
+      }
+    }
+    .item__right {
+      justify-content: flex-end;
+      a {
+        color: #007791;
+        &:hover {
+          color: $color-text-1;
+        }
+      }
+    }
+  }
+
+  .footer__end-hr {
+    border-top: 6px solid #ec5252;
+  }
+
+  @media (max-width: 992px) {
+    .footer__main {
+      .main__col {
+        margin-bottom: 2rem;
+      }
+      .main__col--2 {
+        .item {
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .footer__bottom {
+      .item__right {
+        justify-content: flex-start;
+        margin-top: 2rem;
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    .footer__main {
+      .main__col {
+        margin-bottom: 2rem;
+      }
+      .main__col--2 {
+        .item {
+          display: flex;
+          justify-content: flex-start;
+        }
+      }
+      .locate-dropup {
+        flex-direction: row;
+      }
+    }
+  }
+}
