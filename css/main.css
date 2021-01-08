@@ -906,7 +906,7 @@ p {
 }
 
 @media (max-width: 768px) {
-  .header .header__left .categories {
+  .header .header__left .header__categories {
     display: none !important;
   }
   .header .header__left .form-search {
@@ -989,11 +989,5 @@ p {
 
 .categories .item:hover {
   box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.15);
-}
-
-@media (max-width: 768px) {
-  .header__categories {
-    display: none !important;
-  }
 }
 /*# sourceMappingURL=main.css.map */
