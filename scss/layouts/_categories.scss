@@ -19,4 +19,10 @@
             box-shadow: $color-box-shadow-hover;
         }
     }
+   
+}
+@media (max-width:768px) {
+        .header__categories {
+            display: none!important;
+        }
 }
